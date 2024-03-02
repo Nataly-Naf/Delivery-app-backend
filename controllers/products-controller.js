@@ -2,10 +2,7 @@ import Product from "../models/products.js";
 
 const getAllProducts = async (req, res) => {
   try {
-    const products = await Product.find(
-      { shopId: req.body.shopId },
-      "-createdAt -updatedAt"
-    );
+    const products = await Product.find({}, "-createdAt -updatedAt");
     res.json(products);
   } catch (error) {
     res.status(500).json({ message: "Ошибка сервера", error: error.message });
