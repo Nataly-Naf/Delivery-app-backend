@@ -2,9 +2,9 @@
 
 Node js backend for Medicine delivery app
 
-### Команди:
+### Commands:
 
-- `npm start` &mdash; старт сервера в режимі production
-- `npm run start:dev` &mdash; старт сервера в режимі розробки (development)
-- `npm run lint` &mdash; запустити виконання перевірки коду з eslint, необхідно виконувати перед кожним PR та виправляти всі помилки лінтера
-- `npm lint:fix` &mdash; та ж перевірка лінтера, але з автоматичними виправленнями простих помилок
+npm start — start the server in production mode.
+npm run start:dev — start the server in development mode.
+npm run lint — run code linting with eslint. It should be executed before each PR and all linting errors should be fixed.
+npm lint:fix — same as linting, but with automatic fixing of simple errors.
